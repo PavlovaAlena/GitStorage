@@ -93,4 +93,4 @@ ___
 
 Будет: 
 
-![Логотип git](https://i.ytimg.com/vi/0lKoXWPoUB0/hqdefault.jpg "Это картинка git")
+![Логотип git](/hqdefault.jpg "Это картинка git")
