@@ -8,7 +8,8 @@
 7. [gitignore](#gitignore)
 8. [rm](#rm)
 9. [branch](#branch)
-1. [merge](#merge)
+10. [merge](#merge)
+11. [proxy](#proxy)
 
 **Git** — это набор консольных утилит, которые отслеживают и фиксируют изменения в файлах (чаще всего речь идет об исходном коде программ, но можно использовать его для любых файлов).
 Для освоения можно воспользоваться:
@@ -119,3 +120,27 @@ ___
  Разрешение конфликтов при слиянии проходит по привычной схеме «редактирование — индексирование — коммит».
 
 ![Пример merge](/GitMergeConf.png "Пример работы комманды merge")
+
+## 11. proxy - работа через прокси-сервер
+___
+Для работы через proxy необходимо в git внести соответствующие адрес и порт.
+
+**Незащищенный прокси (http)**
+>git config --global http.proxy http://proxy.company.com:port
+>>**И отключить его:**
+>>git config --global --unset-all http.proxy
+
+**Защищенный прокси (https)**
+>git config --global https.proxy https://proxy.company.com:port
+>>**И отключить его:**
+>>git config --global --unset-all https.proxy
+
+Или прописать настройк напрямую в файле .gitconfig, который лежит в домашней директории пользователя C:\Users\Имя_Пользователя
+
+>[http]  
+>  	proxy = proxyfg.argos-group.ru:3128  
+>[https]  
+>	proxy = https://proxyfg.argos-group.ru:3128
+
+Если через proxy нужно разово получить с GitHub, то можно воспользоваться:
+>git -c "http.proxy=proxy.company.com:port" clone https://github.com/PavlovaAlena/version_control_lection_3.git
