@@ -12,7 +12,7 @@
 10. [merge](#merge)
 #### **Работа с GitHub**
 11. [proxy](#proxy)
-12. [prremote и cloneoxy](#remote_clone)
+12. [prremote и clone](#remote_clone)
 13. [pull и push](#pull_push) 
 14. [fork и pull](#fork_pull)
 
@@ -182,5 +182,5 @@ ___
 2. Сделать **git clone**
 3. Создать новую ветку, в которой прописать изменения
 4. Сделать **git add** и **git commit**
-5. Сделать **git push** свой ветки
+5. Сделать **git push** своей ветки
 6. Сделать **Pull-request**
